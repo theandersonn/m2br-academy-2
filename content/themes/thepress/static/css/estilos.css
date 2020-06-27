@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cabecalho-pagina {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 48px;
+  background-color: #ff5900;
+  color: #fff;
+}
+
+.cabecalho-pagina > h1 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.cabecalho-pagina > span {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.secao-apresentacao {
+  max-width: 960px;
+  margin: 0 auto 48px auto;
+}
+
+.secao-apresentacao > p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 15px;
+}
+
+.secao-cursos {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .secao-cursos {
+    display: flex;
+  }
+}
+
+.curso {
+  padding: 0 15px;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .curso + article {
+    margin-top: 45px;
+  }
+}
+
+.titulo-curso {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.descricao-curso {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.thumb-curso {
+  display: block;
+  width: 100%;
+}
+
+.botao {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  line-height: 50px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.botao:hover {
+  background-color: #ff5900;
+  border: 1px solid #ff5900;
+  color: #fff;
+}
